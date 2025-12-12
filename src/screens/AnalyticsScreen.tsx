@@ -6,7 +6,7 @@ import { colors } from '../theme/colors';
 export default function AnalyticsScreen() {
     return (
         <View style={styles.screen}>
-            <Text style={styles.title}>Payments</Text>
+            <Text style={styles.title}>Analytics</Text>
         </View>
     );
 }

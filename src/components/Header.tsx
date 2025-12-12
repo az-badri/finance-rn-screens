@@ -5,9 +5,9 @@ import { colors } from '../theme/colors';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet } from 'react-native';
 
-type Props = { name?: string; onQrPress?: () => void; onAvatarPress?: () => void };
+type HeaderProps = { name?: string; onQrPress?: () => void; onAvatarPress?: () => void };
 
-export default function Header({ name = 'Charlotte', onQrPress, onAvatarPress }: Props) {
+export default function Header({ name = 'Charlotte', onQrPress, onAvatarPress }: HeaderProps) {
     return (
         <View style={styles.header}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>

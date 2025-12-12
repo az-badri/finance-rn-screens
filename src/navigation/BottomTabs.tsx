@@ -20,7 +20,6 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 
 export default function BottomTabs() {
     return (
-        // @ts-ignore
         <Tab.Navigator
             screenOptions={({ route }) => ({
                 headerShown: false,
