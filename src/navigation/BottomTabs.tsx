@@ -2,6 +2,11 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { colors } from '../theme/colors';
+import HomeScreen from "../screens/HomeScreen";
+import PaymentsScreen from "../screens/PaymentsScreen";
+import HistoryScreen from "../screens/HistoryScreen";
+import AnalyticsScreen from "../screens/AnalyticsScreen";
+import ChatsScreen from "../screens/ChatsScreen";
 
 export type BottomTabParamList = {
     Home: undefined;
@@ -39,11 +44,11 @@ export default function BottomTabs() {
                 },
             })}
         >
-   {/*         <Tab.Screen name="Home" component={HomeScreen} />
+            <Tab.Screen name="Home" component={HomeScreen} />
             <Tab.Screen name="Payments" component={PaymentsScreen} />
             <Tab.Screen name="History" component={HistoryScreen} />
             <Tab.Screen name="Analytics" component={AnalyticsScreen} />
-            <Tab.Screen name="Chats" component={ChatsScreen} />*/}
+            <Tab.Screen name="Chats" component={ChatsScreen} />
         </Tab.Navigator>
     );
 }
