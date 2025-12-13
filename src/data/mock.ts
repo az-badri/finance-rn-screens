@@ -2,15 +2,15 @@ import PersonAvatar from "../../assets/icons/PersonAvatar";
 
 export type Card = {
     id: string;
-    type: 'debit' | 'virtual';
+    type: 'Debit' | 'Virtual';
     balance: string;
     last4: string;
     gradient?: [string, string];
 };
 
 export const cards: Card[] = [
-    { id: '1', type: 'debit', balance: '$4,098.12', last4: '4385', gradient: ['#FF7A2A', '#FF6A00'] },
-    { id: '2', type: 'virtual', balance: '$14.71', last4: '9081', gradient: ['#9B9B9B', '#8E8E8E'] },
+    { id: '1', type: 'Debit', balance: '$4,098.12', last4: '4385', gradient: ['#FF7A2A', '#FF6A00'] },
+    { id: '2', type: 'Virtual', balance: '$14.71', last4: '9081', gradient: ['#9B9B9B', '#8E8E8E'] },
 ];
 export type Transaction = {
     id: string;
