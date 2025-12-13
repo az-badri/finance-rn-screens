@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { rem } from '../theme';
 import { colors } from '../theme/colors';
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet } from 'react-native';
 import AvatarIcon from '../../assets/icons/AvatarIcon'
+import ScannerIcon from "../../assets/icons/ScannerIcon";
 
 type HeaderProps = { name?: string; onQrPress?: () => void; onAvatarPress?: () => void };
 
@@ -20,9 +20,9 @@ export default function Header({ name = 'Charlotte', onQrPress, onAvatarPress }:
                 </TouchableOpacity>
             </View>
 
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: rem(8) }}>
                 <TouchableOpacity onPress={onQrPress} style={{ padding: rem(6) }}>
-                    <Ionicons name="qr-code" size={20} color={colors.textPrimary} />
+                    <ScannerIcon size={30} />
                 </TouchableOpacity>
             </View>
         </View>
@@ -31,6 +31,8 @@ export default function Header({ name = 'Charlotte', onQrPress, onAvatarPress }:
 
 const styles = StyleSheet.create({
     header: {
+        display: 'flex',
+        alignContent: 'center',
         height: rem(72),
         paddingHorizontal: rem(16),
         flexDirection: 'row',

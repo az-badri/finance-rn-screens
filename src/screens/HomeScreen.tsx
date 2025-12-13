@@ -28,11 +28,11 @@ export default function HomeScreen() {
                         <ExpenseChart />
                         <Text style={styles.subHeader}>Today</Text>
                         {transactions.slice(0, 1).map(t => (
-                            <TransactionItem key={t.id} title={t.title} subtitle={t.subtitle} amount={t.amount} date={t.date} avatarUrl={t.avatarUrl} isIcon={t.isIcon} />
+                            <TransactionItem key={t.id} title={t.title} subtitle={t.subtitle} amount={t.amount} date={t.date} avatar={t.avatar} isIcon={t.isIcon} />
                         ))}
                         <Text style={[styles.subHeader, { marginTop: rem(18) }]}>Yesterday</Text>
                         {transactions.slice(1).map(t => (
-                            <TransactionItem key={t.id} title={t.title} subtitle={t.subtitle} amount={t.amount} date={t.date} avatarUrl={t.avatarUrl} isIcon={t.isIcon} />
+                            <TransactionItem key={t.id} title={t.title} subtitle={t.subtitle} amount={t.amount} date={t.date} avatar={t.avatar} isIcon={t.isIcon} />
                         ))}
                     <View style={{ height: rem(120) }} />
                 </ScrollView>

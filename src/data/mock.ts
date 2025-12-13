@@ -1,4 +1,6 @@
-import PersonAvatar from "../../assets/icons/PersonAvatar";
+import Person1 from  '../../assets/images/Person1.png'
+import NetflixIcon from  '../../assets/images/NetflixIcon.png'
+import StarbucksIcon from  '../../assets/images/StarbucksIcon.png'
 
 export type Card = {
     id: string;
@@ -20,13 +22,13 @@ export type Transaction = {
     date: string;
     avatarUrl?: string;
     isIcon?: boolean;
-    icon?: any;
+    avatar?: any;
 };
 
 export const transactions: Transaction[] = [
-    { id: 't1', title: 'Matthew Billson', subtitle: 'Money Transfer', amount: '$56.19', date: 'Jun 9, 12:08', isIcon: true, icon: PersonAvatar },
-    { id: 't2', title: 'Starbucks', subtitle: 'Food', amount: '$122.47', date: 'Jun 8, 19:21', isIcon: true },
-    { id: 't3', title: 'Netflix', subtitle: 'Entertainment', amount: '$13.17', date: 'Jun 8, 08:53', isIcon: true },
+    { id: 't1', title: 'Matthew Billson', subtitle: 'Money Transfer', amount: '$56.19', date: 'Jun 9, 12:08', isIcon: true, avatar: Person1 },
+    { id: 't2', title: 'Starbucks', subtitle: 'Food', amount: '$122.47', date: 'Jun 8, 19:21', isIcon: true, avatar: StarbucksIcon },
+    { id: 't3', title: 'Netflix', subtitle: 'Entertainment', amount: '$13.17', date: 'Jun 8, 08:53', isIcon: true, avatar: NetflixIcon },
 ];
 
 export const notifications_data = [

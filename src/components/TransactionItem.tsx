@@ -8,15 +8,15 @@ type Props = {
     subtitle?: string;
     amount: string;
     date: string;
-    avatarUrl?: string;
+    avatar?: string;
     isIcon?: boolean;
     icon?: any;
 };
 
-export default function TransactionItem({ title, subtitle, amount, date, avatarUrl, isIcon, icon }: Props) {
+export default function TransactionItem({ title, subtitle, amount, date, avatar }: Props) {
     return (
         <TouchableOpacity style={styles.wrap} activeOpacity={0.8}>
-            {isIcon ? <View style={styles.iconPlaceholder} >{icon}</View> : <Image source={{ uri: avatarUrl }} style={styles.avatar} />}
+            <Image source={avatar} style={styles.avatar} />
             <View style={{ flex: 1, marginLeft: rem(12) }}>
                 <Text style={styles.title}>{title}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: rem(6) }}>
