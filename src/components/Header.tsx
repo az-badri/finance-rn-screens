@@ -12,7 +12,7 @@ export default function Header({ name = 'Charlotte', onQrPress, onAvatarPress }:
         <View style={styles.header}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <TouchableOpacity onPress={onAvatarPress} style={styles.avatarWrap} activeOpacity={0.8}>
-                    <Image source={{ uri: 'https://i.pravatar.cc/48' }} style={styles.avatar} />
+                    <Image source={{ uri: 'https://i.pravatar.cc/127' }} style={styles.avatar} />
                 </TouchableOpacity>
                 <TouchableOpacity style={{ marginLeft: rem(12) }}>
                     <Text style={styles.name}>{name} <Text style={styles.chev}>›</Text></Text>

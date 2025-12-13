@@ -10,12 +10,15 @@ import { colors } from '../theme/colors';
 import { transactions } from '../data/mock';
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from "react-native-safe-area-context";
+import { NavigationProp, useNavigation } from "@react-navigation/native";
 
 export default function HomeScreen() {
+    const navigation = useNavigation<NavigationProp>();
+
     return (
         <SafeAreaView style={styles.safe} edges={['top']}>
             <View style={styles.screen}>
-                <Header />
+                <Header onAvatarPress={() => navigation.navigate('Notifications')} />
                 <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false}>
                     <CategoryTabs />
                     <CardSlider/>
@@ -41,7 +44,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     safe: {
         flex: 1,
-        backgroundColor: '#000', // обязательно!
+        backgroundColor: '#000',
     },
     container: {
         flex: 1,
