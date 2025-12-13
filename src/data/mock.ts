@@ -1,3 +1,5 @@
+import PersonAvatar from "../../assets/icons/PersonAvatar";
+
 export type Card = {
     id: string;
     type: 'debit' | 'virtual';
@@ -18,10 +20,44 @@ export type Transaction = {
     date: string;
     avatarUrl?: string;
     isIcon?: boolean;
+    icon?: any;
 };
 
 export const transactions: Transaction[] = [
-    { id: 't1', title: 'Matthew Billson', subtitle: 'Money Transfer', amount: '$56.19', date: 'Jun 9, 12:08', avatarUrl: 'https://i.pravatar.cc/96?img=5' },
+    { id: 't1', title: 'Matthew Billson', subtitle: 'Money Transfer', amount: '$56.19', date: 'Jun 9, 12:08', isIcon: true, icon: PersonAvatar },
     { id: 't2', title: 'Starbucks', subtitle: 'Food', amount: '$122.47', date: 'Jun 8, 19:21', isIcon: true },
     { id: 't3', title: 'Netflix', subtitle: 'Entertainment', amount: '$13.17', date: 'Jun 8, 08:53', isIcon: true },
 ];
+
+export const notifications_data = [
+    {
+        id: '1',
+        headerDate: 'TODAY, 17 JUNE',
+        title: "Received from Anna",
+        amount: "+$110",
+        date: "17 June 2025, 17:49 · Payments",
+        avatar: "https://i.pravatar.cc/100",
+        isDot: true,
+    },
+    {
+        id: '2',
+        headerDate: 'YESTERDAY, 16 JUNE',
+        title: "See our limited offer!",
+        description: "Would you like to visit new countries?",
+        date: "16 June 2025, 23:08 · Travel",
+    },
+    {
+        id: '3',
+        title: "Sent to •• 2041",
+        amount: "-$14.62",
+        date: "16 June 2025, 06:18 · Payments",
+        avatar: "https://i.pravatar.cc/100",
+        isDot: true,
+    },
+    {
+        id: '4',
+        headerDate: '24 MARCH, 2025',
+        title: 'iOS 26.0.1 · 109.255.84.7 · Spain',
+        date: "24 March 2025, 15:44 · Security",
+    }
+]

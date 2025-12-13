@@ -13,7 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 
 export default function HomeScreen() {
-    const navigation = useNavigation<NavigationProp>();
+    const navigation = useNavigation<NavigationProp<any>>();
 
     return (
         <SafeAreaView style={styles.safe} edges={['top']}>
