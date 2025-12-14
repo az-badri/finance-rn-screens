@@ -46,6 +46,7 @@ export const notifications_data = [
         date: "17 June 2025, 17:49 · Payments",
         avatar: WomanAva,
         isDot: true,
+        type: 'Payments',
     },
     {
         id: '2',
@@ -55,6 +56,7 @@ export const notifications_data = [
         description2: "Maybe it’s your time!",
         date: "16 June 2025, 23:08 · Travel",
         avatar: World,
+        type: 'Travel',
     },
     {
         id: '3',
@@ -65,6 +67,7 @@ export const notifications_data = [
         description: 'Debit •• 4385',
         avatar: IosArrow,
         isDot: true,
+        type: 'Payments',
     },
     {
         id: '4',
@@ -74,5 +77,6 @@ export const notifications_data = [
         description2: 'iOS 26.0.1 · 109.255.84.7 · Spain',
         date: "24 March 2025, 15:44 · Security",
         avatar: Security,
+        type: 'System',
     }
 ]

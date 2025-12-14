@@ -1,29 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import {rem} from "../../theme";
+import { rem } from "../../theme";
+import { NotificationTab } from "../../hooks/useNotificationsTab";
 
-const TABS = ['All', 'Payments', 'System', 'Delivery', 'Travel'];
+type Props = {
+    tabs: NotificationTab[];
+    activeTab: NotificationTab;
+    onTabPress: (tab: NotificationTab) => void;
+};
 
-export default function NotificationsTabs() {
-    const [active, setActive] = useState('All');
-
+export default function NotificationsTabs({
+                                              tabs,
+                                              activeTab,
+                                              onTabPress,
+                                          }: Props) {
     return (
         <View style={styles.container}>
-            {TABS.map(tab => (
+            {tabs.map(tab => (
                 <TouchableOpacity
                     key={tab}
-                    onPress={() => setActive(tab)}
+                    onPress={() => onTabPress(tab)}
                     style={styles.tab}
                 >
                     <Text
                         style={[
                             styles.text,
-                            active === tab && styles.activeText,
+                            activeTab === tab && styles.activeText,
                         ]}
                     >
                         {tab}
                     </Text>
-                    {active === tab && <View style={styles.indicator} />}
+                    {activeTab === tab && <View style={styles.indicator} />}
                 </TouchableOpacity>
             ))}
         </View>
