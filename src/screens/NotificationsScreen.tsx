@@ -13,15 +13,17 @@ export default function NotificationsScreen() {
             <NotificationsTabs />
 
             <ScrollView>
-                {notifications_data.map(({ id, headerDate, title, amount, date, avatar, isDot = false }) => (
+                {notifications_data.map(({ id, headerDate, title, amount, date, avatar, isDot = false, description, description2 }) => (
                     <View key={id}>
-                        <Text style={styles.section}>{headerDate}</Text>
+                        {headerDate && <Text style={styles.section}>{headerDate}</Text>}
                         <NotificationItem
                             title={title}
                             amount={amount}
                             date={date}
                             avatar={avatar}
                             dot={isDot}
+                            description={description}
+                            description2={description2}
                         />
                     </View>
                 ))}

@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 type Props = {
     title: string;
     description?: string;
+    description2?: string;
     amount?: string;
     date: string;
     avatar?: any;
@@ -13,6 +14,7 @@ type Props = {
 export default function NotificationItem({
                                              title,
                                              description,
+                                             description2,
                                              amount,
                                              date,
                                              avatar,
@@ -34,6 +36,9 @@ export default function NotificationItem({
                 {description && (
                     <Text style={styles.description}>{description}</Text>
                 )}
+                {description2 && (
+                    <Text style={styles.description}>{description2}</Text>
+                )}
 
                 <Text style={styles.date}>{date}</Text>
             </View>
@@ -54,7 +59,6 @@ const styles = StyleSheet.create({
     avatar: {
         width: 44,
         height: 44,
-        borderRadius: 22,
         marginRight: 12,
     },
     iconPlaceholder: {
@@ -74,7 +78,7 @@ const styles = StyleSheet.create({
     },
     amount: {
         color: '#ff6a00',
-        fontSize: 18,
+        fontSize: 21,
         fontWeight: '600',
         marginVertical: 4,
     },

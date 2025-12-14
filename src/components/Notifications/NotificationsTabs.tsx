@@ -41,12 +41,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     tab: {
-        marginRight: 20,
-        paddingBottom: 12,
+        marginLeft: rem(15),
+        marginRight: rem(15),
     },
     text: {
         color: '#8a8a8a',
         fontSize: 15,
+        paddingBottom: rem(6),
     },
     activeText: {
         color: '#ff6a00',
