@@ -1,6 +1,10 @@
 import Person1 from  '../../assets/images/Person1.png'
 import NetflixIcon from  '../../assets/images/NetflixIcon.png'
 import StarbucksIcon from  '../../assets/images/StarbucksIcon.png'
+import WomanAva from  '../../assets/images/WomanAva.png'
+import World from  '../../assets/images/World.png'
+import IosArrow from  '../../assets/images/IosArrow.png'
+import Security from  '../../assets/images/Security.png'
 
 export type Card = {
     id: string;
@@ -38,7 +42,7 @@ export const notifications_data = [
         title: "Received from Anna",
         amount: "+$110",
         date: "17 June 2025, 17:49 · Payments",
-        avatar: "https://i.pravatar.cc/100",
+        avatar: WomanAva,
         isDot: true,
     },
     {
@@ -47,13 +51,14 @@ export const notifications_data = [
         title: "See our limited offer!",
         description: "Would you like to visit new countries?",
         date: "16 June 2025, 23:08 · Travel",
+        avatar: World,
     },
     {
         id: '3',
         title: "Sent to •• 2041",
         amount: "-$14.62",
         date: "16 June 2025, 06:18 · Payments",
-        avatar: "https://i.pravatar.cc/100",
+        avatar: IosArrow,
         isDot: true,
     },
     {
@@ -61,5 +66,6 @@ export const notifications_data = [
         headerDate: '24 MARCH, 2025',
         title: 'iOS 26.0.1 · 109.255.84.7 · Spain',
         date: "24 March 2025, 15:44 · Security",
+        avatar: Security,
     }
 ]

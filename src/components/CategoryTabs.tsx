@@ -27,8 +27,8 @@ export default function CategoryTabs() {
 }
 
 const styles = StyleSheet.create({
-    row: { marginTop: rem(10),  marginBottom: rem(10), flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: rem(6) },
-    item: { alignItems: 'center', width: (rem(390) - rem(36)) / 4 - rem(6) },
+    row: { marginTop: rem(10),  marginBottom: rem(10), flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: rem(6)},
+    item: { alignItems: 'center', width: (rem(390) - rem(36)) / 4 - rem(12) },
     icon: { width: rem(46), height: rem(46), borderRadius: rem(12), backgroundColor: '#111', alignItems: 'center', justifyContent: 'center' },
     label: { marginTop: rem(8), color: colors.textPrimary, fontSize: rem(12) },
 });

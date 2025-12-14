@@ -1,0 +1,16 @@
+import { View } from 'react-native';
+import Svg, { Path } from 'react-native-svg';
+
+export const NotifInbox = ({ size = 18 }: { size?: number }) => {
+    return(
+        <View>
+            <Svg width={size} height={size} viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <Path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 13.9596H4.89131V17L8.86028 13.9596H18V0H2.43168L3.51519e-06 0L0 13.9596ZM8.07765 7.16485L6.73603 5.8958L5.33852 7.21772L6.68013 8.46033L8.0497 9.78226L9.44721 8.48677L12.6335 5.49922L11.264 4.17729L8.07765 7.16485Z"
+                      fill="white"/>
+            </Svg>
+        </View>
+    );
+};
+
+export default NotifInbox;

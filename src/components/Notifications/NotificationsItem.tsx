@@ -6,7 +6,7 @@ type Props = {
     description?: string;
     amount?: string;
     date: string;
-    avatar?: string;
+    avatar?: any;
     dot?: boolean;
 };
 
@@ -21,7 +21,7 @@ export default function NotificationItem({
     return (
         <View style={styles.container}>
             {avatar ? (
-                <Image source={{ uri: avatar }} style={styles.avatar} />
+                <Image source={avatar} style={styles.avatar} />
             ) : (
                 <View style={styles.iconPlaceholder} />
             )}

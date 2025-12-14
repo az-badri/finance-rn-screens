@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import NotifInbox from "../../../assets/icons/NofiInbox";
 
 export default function NotificationsHeader() {
     const navigation = useNavigation();
@@ -14,8 +15,8 @@ export default function NotificationsHeader() {
 
             <Text style={styles.title}>Notifications</Text>
 
-            <TouchableOpacity>
-                <Ionicons name="checkmark-done-outline" size={22} color="#fff" />
+            <TouchableOpacity style={styles.inboxIcon}>
+                <NotifInbox size={18} />
             </TouchableOpacity>
         </View>
     );
@@ -34,4 +35,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '600',
     },
+    inboxIcon: {
+        marginRight: 6,
+    }
 });
