@@ -3,6 +3,9 @@
 Мобильное финансовое приложение, созданное по макетам (Home + Notifications).  
 Основа: **Expo**, **React Native**, **TypeScript**, **React Navigation**.
 
+![Preview](./assets/screens/result_figma.png)
+скриншот тз из фигмы:
+https://www.figma.com/design/TUs0yc4YQtkpMhHvawK5iG/Test?node-id=2118-1077&p=f&t=8385rjAxJD5PVZ34-0
 ---
 
 ## 🚀 Функционал
@@ -44,4 +47,6 @@ npm install -g expo-cli
 
 Запуск в dev-режиме:
 npx expo start
+или 
+yarn start
 
